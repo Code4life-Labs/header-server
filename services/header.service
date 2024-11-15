@@ -1,0 +1,12 @@
+[Unit]
+Description=Header Server
+After=network.target
+ 
+[Service]
+ExecStart=/bin/bash /root/header-server/scripts/startup.sh
+WorkingDirectory=/opt/walnet-backend
+Restart=always
+User=root
+ 
+[Install]
+WantedBy=multi-user.target
