@@ -4,7 +4,7 @@ After=network.target
  
 [Service]
 ExecStart=/bin/bash /root/header-server/scripts/startup.sh
-WorkingDirectory=/opt/walnet-backend
+WorkingDirectory=/opt/header-server
 Restart=always
 User=root
  
